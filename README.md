@@ -43,35 +43,12 @@ Source Citations: The UI provides an expandable "View Source Documents" section 
 
 🛠️ Technical Decisions
 
-Component
-
-Choice
-
-Rationale
-
-LLM
-
-gpt-4o-mini
-
-Chosen for its high speed and low cost ($0.15/1M tokens) while maintaining strong reasoning for retrieval tasks.
-
-Vector DB
-
-Pinecone
-
-Selected for its serverless architecture, low maintenance overhead, and industry-standard API.
-
-Embeddings
-
-text-embedding-3-small
-
-OpenAI's latest efficient model (1536 dimensions) provides an optimal balance of cost vs. semantic capture.
-
-Framework
-
-LangChain (LCEL)
-
-Used specifically for the RunnablePassthrough logic to build cleaner, composable chains without "black box" abstractions.
+| Component | Choice | Rationale |
+| :--- | :--- | :--- |
+| **LLM** | `gpt-4o-mini` | Chosen for its high speed and low cost ($0.15/1M tokens) while maintaining strong reasoning for retrieval tasks. |
+| **Vector DB** | **Pinecone** | Selected for its serverless architecture, low maintenance overhead, and industry-standard API. |
+| **Embeddings** | `text-embedding-3-small` | OpenAI's latest efficient model (1536 dimensions) provides an optimal balance of cost vs. semantic capture. |
+| **Framework** | **LangChain (LCEL)** | Used specifically for the `RunnablePassthrough` logic to build cleaner, composable chains without "black box" abstractions. |
 
 💻 Setup & Installation
 
