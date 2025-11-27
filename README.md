@@ -18,7 +18,6 @@ Unlike a standard chatbot, this system features a "Glass Box" UI, allowing users
 The system follows a standard ETL (Extract, Transform, Load) and Retrieval pipeline:
 
 graph LR
-
     A[SEC 10-K PDF] -->|PyPDFLoader| B(Raw Text)
     B -->|Recursive Splitter| C[Text Chunks]
     C -->|OpenAI Embeddings| D[Vector Embeddings]
