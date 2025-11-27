@@ -18,6 +18,7 @@ Unlike a standard chatbot, this system features a "Glass Box" UI, allowing users
 The system follows a standard ETL (Extract, Transform, Load) and Retrieval pipeline:
 
 graph LR
+
     A[SEC 10-K PDF] -->|PyPDFLoader| B(Raw Text)
     B -->|Recursive Splitter| C[Text Chunks]
     C -->|OpenAI Embeddings| D[Vector Embeddings]
@@ -39,6 +40,7 @@ Recursive Chunking: Documents are split into 1000-character chunks with a 200-ch
 Hallucination Guardrails: System prompt enforces strict "I don't know" policies if data is missing.
 
 Source Citations: The UI provides an expandable "View Source Documents" section for trust and verification.
+
 
 🛠️ Technical Decisions
 
