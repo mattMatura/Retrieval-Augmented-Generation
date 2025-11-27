@@ -47,7 +47,7 @@ Advantage: "Glass Box" Citations, 0% Hallucination on retrieved data, verifiable
 
 3. Feature Comparison Matrix
 
-| Feature | Bloomberg | ChatGPT Ent. | 🟢 10-K Analyst (Mine) |
+| Feature | Bloomberg | ChatGPT Ent. | 10-K Analyst (Mine) |
 | :--- | :---: | :---: | :---: |
 | **Data Freshness** | Real-time | Training Cut-off | Real-time (via RAG) |
 | **Trust/Citations** | High | Low (Black Box) | **High (Glass Box)** |
